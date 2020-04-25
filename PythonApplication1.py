@@ -10,4 +10,5 @@ years = float(input('Enter the number of years the money will grow: '))
 # Calculate the amount needed to deposit
 present_value = future_value / (1.0 + (rate/100))**years
 # Display the amount needed to deposit
-print('You will need to deposit the amount: $', format(present_value, ',.2f'))
+present_value = '${:,.2f}'.format(present_value)
+print('You will need to deposit the amount:', present_value)
